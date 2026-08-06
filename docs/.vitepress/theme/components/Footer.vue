@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useLayout } from 'vitepress/theme';
-import { data } from '../../data/metadata.data';
 
 const { hasSidebar } = useLayout();
 </script>
@@ -9,25 +8,11 @@ const { hasSidebar } = useLayout();
   <footer class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p>
-        使用 <a href="https://vitepress.dev" target="_blank">VitePress</a> 构建
+        镜像自 <a href="https://survive-hfut.cc" target="_blank">survive-hfut.cc</a>
       </p>
       <p>
-        <span>
-          最后更新于
-          {{
-            new Date(data.time).toLocaleString('zh-CN', {
-              timeZone: 'Asia/Shanghai',
-            })
-          }}
-        </span>
-        <template v-if="data.context.sha">
-          <span style="margin: 0 4px">·</span>
-          <code :title="data.context.sha">
-            {{ data.context.sha.substring(0, 7) }}
-          </code>
-        </template>
+        <a href="https://beian.miit.gov.cn/" target="_blank">黑ICP备2023010514号</a>
       </p>
-      <p>未作特别声明的内容，均按照 CC-BY-SA 4.0 协议进行分发</p>
     </div>
   </footer>
 </template>

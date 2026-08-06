@@ -79,7 +79,7 @@ export default defineConfig({
       RssPlugin({
         title: '活在肥宣',
         copyright: 'CC-BY-SA 4.0',
-        baseUrl: 'https://survive-hfut.cc',
+        baseUrl: 'https://survive-hfut.klps.top',
       }),
       pagefindPlugin({
         customSearchQuery: chineseSearchOptimize,
@@ -203,7 +203,7 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://survive-hfut.cc',
+    hostname: 'https://survive-hfut.klps.top',
   },
 
   srcExclude: excludedPages,
@@ -242,8 +242,8 @@ function getHead() {
       {
         defer: 'true',
         src: 'https://cloud.umami.is/script.js',
-        'data-website-id': 'e4fe9a73-74ca-4c11-99e5-585d60267170',
-        // dashboard: https://cloud.umami.is/share/TO6zOo7xWbS2gcFF/survive-hfut.cc
+        'data-website-id': '7f2a0a50-7bdf-4c44-bd2c-2a2ee3543c42',
+        // dashboard: https://cloud.umami.is/share/TO6zOo7xWbS2gcFF/survive-hfut.klps.top
       },
     ]);
   }
