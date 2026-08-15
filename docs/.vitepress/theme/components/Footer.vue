@@ -51,6 +51,10 @@ const { hasSidebar } = useLayout();
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
   margin: 0 auto;
   max-width: var(--vp-layout-max-width);
   text-align: center;
