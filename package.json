@@ -9,12 +9,12 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "format": "lint-md docs/** --fix && prettier docs/**/*.md -w && pnpm exec markdownlint-cli2 --fix",
+    "format": "lint-md docs/** --fix && prettier docs/**/*.{md,ts,vue} -w && pnpm exec markdownlint-cli2 --fix",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@lint-md/cli": "2.2.3",
-    "@types/node": "^26.1.2",
+    "@lint-md/cli": "2.2.5",
+    "@types/node": "^26.2.0",
     "@types/remove-markdown": "^0.3.4",
     "husky": "^9.1.7",
     "prettier": "^3.9.6"
@@ -22,17 +22,15 @@
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
-    "@mdit/plugin-align": "^1.0.2",
-    "@mdit/plugin-figure": "^1.1.0",
-    "@mdit/plugin-footnote": "^1.0.2",
-    "@mdit/plugin-katex": "^1.0.2",
-    "@mdit/plugin-mark": "^2.0.1",
-    "@mdit/plugin-spoiler": "^2.0.1",
-    "@mdit/plugin-sup": "^1.0.3",
+    "@mdit/plugin-align": "^1.1.0",
+    "@mdit/plugin-figure": "^1.2.0",
+    "@mdit/plugin-katex": "^1.1.0",
+    "@mdit/plugin-mark": "^2.1.0",
+    "@mdit/plugin-spoiler": "^2.1.0",
+    "@mdit/plugin-sup": "^1.1.0",
     "@nolebase/markdown-it-bi-directional-links": "^2.18.2",
     "@nolebase/markdown-it-unlazy-img": "^2.18.2",
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
     "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
@@ -47,14 +45,14 @@
     "simple-git": "^3.28.0",
     "typescript": "^6.0.3",
     "vite-plugin-pwa": "^1.3.0",
-    "vitepress": "^2.0.0-alpha.18",
+    "vitepress": "^2.0.0-alpha.19",
     "vitepress-markdown-timeline": "^1.2.2",
-    "vitepress-mermaid-renderer": "^1.1.28",
+    "vitepress-mermaid-renderer": "^1.2.0",
     "vitepress-plugin-back-to-top": "^1.0.1",
     "vitepress-plugin-pagefind": "^0.4.24",
     "vitepress-plugin-rss": "^0.4.4",
     "vitepress-plugin-tabs": "^0.9.1",
-    "vitepress-sidebar": "^1.34.0",
-    "vue": "^3.5.40"
+    "vitepress-sidebar": "^1.38.0",
+    "vue": "^3.5.41"
   }
 }
